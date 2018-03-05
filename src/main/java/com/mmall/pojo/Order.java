@@ -12,13 +12,13 @@ public class Order {
 
     private Integer shippingId;
 
-    private BigDecimal payment;
+    private BigDecimal payment;    //实际付款金额,单位是元,保留两位小数
 
-    private Integer paymentType;
+    private Integer paymentType;   //支付类型,1-在线支付
 
-    private Integer postage;
+    private Integer postage;       //运费,单位是元
 
-    private Integer status;
+    private Integer status;        //订单状态:0-已取消-10-未付款，20-已付款，40-已发货，50-交易成功，60-交易关闭
 
     private Date paymentTime;
 
